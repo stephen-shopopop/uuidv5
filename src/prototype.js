@@ -3,7 +3,7 @@ const crypto = require('crypto')
 
 function generate(namespace, data){
 	
-	// namespace to bytes
+	// namespace to hexa
 	const space = []
 	namespace.replace(/[a-fA-F0-9]{2}/g, (hex) => space.push(parseInt(hex, 16)) && '')
 

@@ -28,6 +28,19 @@ const myUUID = UUIDv5.generate("6ba7b810-9dad-11d1-80b4-00c04fd430c8", data);
 const isValid = UUIDv5.validate(myUUID);
 ```
 
+## MORE
+
+Generate uuidv4 with nodejs > 14 [randomuuid nodejs](https://nodejs.org/docs/latest-v14.x/api/crypto.html#crypto_crypto_randomuuid_options)
+
+```
+const crypto = require('crypto')
+
+// typescript
+// import crypto from 'crypto'
+
+const myUUID = crypto.randomUUID()
+```
+
 ## Contributing
 
 1. npm run build -  Build library.

@@ -9,12 +9,10 @@ function generate(namespace, data){
 
 	assert(space.length === 16, "namespace must be a valid UUID")
 	
-	const name = new TextEncoder().encode(data)
-	
-	// concat Uint8Array space and name
-	const toHash = new Uint8Array(space.length + name.length)
+	// concat Uint8Array space and data
+	const toHash = new Uint8Array(space.length + data.length)
 	toHash.set(space, 0)
-	toHash.set(name, space.length)
+	toHash.set(data, space.length)
 	
 	const buffer = crypto.createHash('sha1').update(toHash).digest()
 	const bytes = new Uint8Array(buffer)

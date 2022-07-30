@@ -1,7 +1,7 @@
 {
-  "name": "node-typescript-template",
+  "name": "uuidv5",
   "version": "1.0.0",
-  "description": "template typescript nodejs with ts-standard",
+  "description": "generate uuidv5",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "private": true,

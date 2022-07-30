@@ -30,7 +30,7 @@ const isValid = UUIDv5.validate(myUUID);
 
 ## MORE
 
-Generate uuidv4 with nodejs > 14 [randomuuid nodejs](https://nodejs.org/docs/latest-v14.x/api/crypto.html#crypto_crypto_randomuuid_options)
+Generate uuidv4 with nodejs > 14 [crypto.randomuuid](https://nodejs.org/docs/latest-v14.x/api/crypto.html#crypto_crypto_randomuuid_options)
 
 ```
 const crypto = require('crypto')

@@ -16,10 +16,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/{repository}.git"
+    "url": "git+https://github.com/stephen-shopopop/uuidv5.git"
   },
   "bugs": {
-    "url": "https://github.com/{repository}/issues"
+    "url": "https://github.com/stephen-shopopop/uuidv5/issues"
   },
   "contributors": [
     "stephen.deletang@shopopop.com"

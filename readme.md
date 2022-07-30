@@ -16,6 +16,18 @@
 
 Generate uuidv5
 
+## Usage
+
+```
+const data = new TextEncoder().encode("Hello World!");
+
+// Generate a v5 UUID using a namespace and some data.
+const myUUID = UUIDv5.generate("6ba7b810-9dad-11d1-80b4-00c04fd430c8", data);
+
+// Validate the v5 UUID.
+const isValid = UUIDv5.validate(myUUID);
+```
+
 ## Contributing
 
 1. npm run build -  Build library.

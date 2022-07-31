@@ -21,7 +21,7 @@ import crypto from 'crypto'
  * @returns uuid
  */
 export function generate (namespace: string, data: Uint8Array): string {
-  // namespace hexa to decimal
+  // namespace parse hexa
   const space: number[] = []
   namespace.replace(/[a-fA-F0-9]{2}/g, (hex: string): string => {
     space.push(parseInt(hex, 16))

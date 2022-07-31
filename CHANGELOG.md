@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.4](https://github.com/stephen-shopopop/uuidv5/compare/v1.1.3...v1.1.4) (2022-07-31)
+
+
+### Bug Fixes
+
+* **bundle:** FIX dependencies ([9a5eda1](https://github.com/stephen-shopopop/uuidv5/commit/9a5eda19459e79fb5a9118559067fc5da0478f3e))
+
 ### [1.1.3](https://github.com/stephen-shopopop/uuidv5/compare/v1.1.2...v1.1.3) (2022-07-31)
 
 ### [1.1.2](https://github.com/stephen-shopopop/uuidv5/compare/v1.1.1...v1.1.2) (2022-07-31)

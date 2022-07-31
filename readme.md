@@ -1,8 +1,3 @@
-<p align="center">
-    <img src="./shopopop.png"
-        height="130">
-</p>
-
 [![Minimal node version](https://img.shields.io/static/v1?label=node&message=%3E=14.16&logo=node.js&color)](https://nodejs.org/about/releases/)
 [![Minimal npm version](https://img.shields.io/static/v1?label=npm&message=%3E=6.14.12&logo=npm&color)](https://github.com/npm/cli/releases)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/stephen-shopopop/node-ts/graphs/commit-activity)
@@ -14,11 +9,39 @@
 
 ## Description
 
-Generate uuidv5
+Generate uuidv5 [RFC4122](https://datatracker.ietf.org/doc/html/rfc4122)
+
+```bash
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                          time_low                             |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |       time_mid                |         time_hi_and_version   |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |clk_seq_hi_res |  clk_seq_low  |         node (0-1)            |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                         node (2-5)                            |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+```
+
+### Installation
+
+[![Minimal node version](https://img.shields.io/static/v1?label=node&message=%3E=14&logo=node.js&color)](https://nodejs.org/about/releases/)
+
+Add .npmrc file in your repository
+
+> @stephen-shopopop:registry=https://npm.pkg.github.com
+
+
+```bash
+npm install @stephen-shopopop/uuidv5@latest
+```
 
 ## Usage
 
-```
+```ts
+import uuidv5 from "uuidv5";
+
 const data = new TextEncoder().encode("Hello World!");
 
 // Generate a v5 UUID using a namespace and some data.
@@ -28,11 +51,11 @@ const myUUID = uuidv5.generate("6ba7b810-9dad-11d1-80b4-00c04fd430c8", data);
 const isValid = uuidv5.validate(myUUID);
 ```
 
-## MORE
+## UUIDv4
 
 Generate uuidv4 with nodejs > 14 [crypto.randomuuid](https://nodejs.org/docs/latest-v14.x/api/crypto.html#crypto_crypto_randomuuid_options)
 
-```
+```js
 const crypto = require('crypto')
 
 // typescript

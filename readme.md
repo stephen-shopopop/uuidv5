@@ -22,10 +22,10 @@ Generate uuidv5
 const data = new TextEncoder().encode("Hello World!");
 
 // Generate a v5 UUID using a namespace and some data.
-const myUUID = UUIDv5.generate("6ba7b810-9dad-11d1-80b4-00c04fd430c8", data);
+const myUUID = uuidv5.generate("6ba7b810-9dad-11d1-80b4-00c04fd430c8", data);
 
 // Validate the v5 UUID.
-const isValid = UUIDv5.validate(myUUID);
+const isValid = uuidv5.validate(myUUID);
 ```
 
 ## MORE
